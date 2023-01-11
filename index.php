@@ -32,7 +32,9 @@
         }
 
         .div2e {
-           
+           background-color: #fff;
+           color: black;
+
             
         }
     .header-message {
@@ -49,7 +51,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <div class="header-message">
-        <h3>Baixe agora o app Dominnus na sua loja de aplicativos.</h3>
+        <h3>Clique aqui para baixar o app Dominnus, e alavancar os seus resultados.</h3>
     </div>
 
 
@@ -65,13 +67,13 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="./pages/blog/index.php">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Marketplace</a>
+          <a class="nav-link" href="./pages/marketplace/index.php">Marketplace</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
+          <a class="nav-link" href="./pages/contato/index.php">Contato</a>
         </li>
       </ul>
     </div>

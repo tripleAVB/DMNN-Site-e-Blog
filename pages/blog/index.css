@@ -1,0 +1,35 @@
+.header-message {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.array-of-cards {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    
+    
+}
+
+.big-title {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.big-card {
+    background-color: black;
+    color: #fff;
+    padding-top: 230px;
+    padding-bottom: 230px;
+    text-align: center;
+    
+}
+
+.the-cards {
+   
+    display: flex;
+}
