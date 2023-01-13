@@ -1,0 +1,20 @@
+.form-title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.header-message {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
+}

@@ -1,3 +1,27 @@
+<?php
+
+if (isset($_POST['submit'])) {
+
+  include_once('./config/config.php');
+
+  $email = $_POST['emailinput'];
+  $nome = $_POST['nameinput'];
+
+  $sql = "INSERT INTO form_contato(email, nome) values ('{$email}', '{$nome}' )";
+
+  $resultado = $conexao->query($sql);
+
+  /*
+  $resultado = mysqli_query($conexao, "INSERT INTO form_contato(email, nome) values ('$email', '$nome' )");
+  }
+  */
+
+  if ($resultado == true) {
+    print "<script>alert('Usuário cadastrado com sucesso')</script>";
+  }
+
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -52,28 +76,39 @@
 
 
 
-<form >
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Qual é o seu email?</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+<form action="index.php" method="POST">
+  <div class="mob-3">
+    
+    <label for="emailinput" class="form-label">Qual é o seu email?</label>
+    
+    <input type="email" class="form-control" id="emailinput" name="emailinput" aria-describedby="emailHelp" required>
+    
     <div id="emailHelp" class="form-text">Não compartiharemos suas informações com ninguém.</div>
+  
   </div>
+
+  <br/>
+  
   <div class="mb-3">
+    
     <label for="exampleInputPassword1" class="form-label">Qual é o seu telefone?</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
+    
+    <input type="text" class="form-control" id="nameinput" name="nameinput" required>
+  
   </div>
+  
   <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" class="form-check-input" id="politica-check" required>
     <label class="form-check-label" for="exampleCheck1">Concordo com a política de privacidade</label>
     
   </div>
   <div class="mb-3 form-check">
 
-  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <input type="checkbox" class="form-check-input" id="termos-check" required>
   <label class="form-check-label" for="exampleCheck1">Concordo com os termos de uso.</label>
 
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <input type="submit" name="submit" id="submit" class="submit-button"/>
 </form>
 </div>
 

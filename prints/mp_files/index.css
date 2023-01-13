@@ -1,0 +1,20 @@
+.header-message {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.big-body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.array-of-texts-soon {
+    padding-top: 100px;
+    text-align: center;
+    width: 550px;
+    height: 300px;
+}
